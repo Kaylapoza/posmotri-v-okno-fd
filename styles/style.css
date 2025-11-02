@@ -13,7 +13,6 @@ html {
   justify-content: center;
   align-items: center;
   inline-size: 1200px;
-  height: 800px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -179,13 +178,13 @@ input {
   border: #fff 1px solid;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
-  font-style: bold;
   font-size: 18px;
   line-height: 100%;
   text-align: center;
   color: #fff;
   background-color: transparent;
   cursor: pointer;
+  padding: 6px 0;
 }
 
 .button:hover {
@@ -207,7 +206,6 @@ input {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
@@ -238,7 +236,7 @@ input {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -258,7 +256,7 @@ input {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background-color: #545050;
 }
 
 .content__card-link:active {
@@ -304,13 +302,14 @@ input {
   line-height: 16.2px;
   text-align: left;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
+  max-width: 196px;
 }
 
 .content__video-card-thumbnail {
